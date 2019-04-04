@@ -3,6 +3,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 public class Model {
+
+
 	private int frameHeight;
 	private int frameWidth;
 	private int imgHeight;
@@ -12,19 +14,93 @@ public class Model {
 	private int direction;
 	private int health;
 	
-	public Model(int frameWidth, int frameHeight, int imgWidth, int imgHeight) {
-		this.frameWidth = frameWidth;
-		this.frameHeight = frameHeight;
-		this.imgWidth = imgWidth;
-		this.imgHeight = imgHeight;
-	}
-	
+
 	public void updateLocationAndDirection() {
 		
 	}
 	
 	public boolean detectCollisions() {
 		return false;
+	}
+	
+	public int getFrameHeight() {
+		return frameHeight;
+	}
+
+	public void setFrameHeight(int frameHeight) {
+		this.frameHeight = frameHeight;
+	}
+
+	public int getFrameWidth() {
+		return frameWidth;
+	}
+
+	public void setFrameWidth(int frameWidth) {
+		this.frameWidth = frameWidth;
+	}
+
+	public int getImgHeight() {
+		return imgHeight;
+	}
+
+	public void setImgHeight(int imgHeight) {
+		this.imgHeight = imgHeight;
+	}
+
+	public int getImgWidth() {
+		return imgWidth;
+	}
+
+	public void setImgWidth(int imgWidth) {
+		this.imgWidth = imgWidth;
+	}
+
+	public int getXloc() {
+		return xloc;
+	}
+
+	public void setXloc(int xloc) {
+		this.xloc = xloc;
+	}
+
+	public int getYloc() {
+		return yloc;
+	}
+
+	public void setYloc(int yloc) {
+		this.yloc = yloc;
+	}
+
+	public int getxVector() {
+		return xVector;
+	}
+
+	public void setxVector(int xVector) {
+		this.xVector = xVector;
+	}
+
+	public int getyVector() {
+		return yVector;
+	}
+
+	public void setyVector(int yVector) {
+		this.yVector = yVector;
+	}
+
+	public int getDirection() {
+		return direction;
+	}
+
+	public void setDirection(int direction) {
+		this.direction = direction;
+	}
+
+	public int getHealth() {
+		return health;
+	}
+
+	public void setHealth(int health) {
+		this.health = health;
 	}
 }
 
@@ -34,16 +110,12 @@ class ModelTest {
 
 	@Test
 	public void testUpdateLocationAndDirection() {
-		Model model = new Model();
-		assertEquals(0, lab01.mult(10, 0), "10 * 0 must be 0");
-		assertEquals(100, lab01.mult(10, -10), "10 * -10 must be -100"); //meant to fail
+		
 	}
 	
 	@Test
 	public void testDetectCollisions() {
-		
-		assertEquals(0, lab01.mult(10, 0), "10 * 0 must be 0");
-		assertEquals(100, lab01.mult(10, -10), "10 * -10 must be -100"); //meant to fail
+
 	}
 
 }
