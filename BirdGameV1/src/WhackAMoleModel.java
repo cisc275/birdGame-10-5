@@ -22,12 +22,12 @@ public class WhackAMoleModel extends Model {
 class WhackAMoleModelTest {
 
 	@Test
-	public void detectCollisions() {
+	public void testDetectCollisions() {
 		
 	}
 	
 	@Test
-	public void randomizeObjects() {
+	public void testRandomizeObjects() {
 		
 	}
 	
