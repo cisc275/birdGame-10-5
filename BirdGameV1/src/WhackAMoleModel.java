@@ -11,6 +11,14 @@ public class WhackAMoleModel extends Model {
 	public void randomizeObjects() {
 		
 	}
+
+	public int getResourceCount() {
+		return resourceCount;
+	}
+
+	public void setResourceCount(int resourceCount) {
+		this.resourceCount = resourceCount;
+	}
 }
 
 
