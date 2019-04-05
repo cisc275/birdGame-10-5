@@ -21,12 +21,12 @@ public class SideSwiperView extends View{
 class SideSwiperViewTest {
 	
 	@Test
-	public void displayBlocks() {
+	public void testDisplayBlocks() {
 		
 	}
 	
 	@Test
-	public void drawBackground() {
+	public void testDrawBackground() {
 		
 	}
 }
