@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+@SuppressWarnings("serial")
 public class ObstacleView extends View {
 	
 	private String movingDirection;

@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("serial")
 public class View extends JPanel {
 	
 	private Color background;

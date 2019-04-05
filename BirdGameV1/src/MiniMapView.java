@@ -1,22 +1,27 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 @SuppressWarnings("serial")
-public class WhackAMoleView extends View {
+public class MiniMapView extends View{
 	
 	@Override
 	public void drawBackground() {
 		
 	}
 	
-	public void displayObjects() {
+	public void showBirdPosition() {
 		
 	}
 	
+	public void showBirdPath() {
+		
+	}
+
 }
 
 //-----------------------------------------------------------------------------------------------------
 //JUnit Tests
-class WhackAMoleViewTest {
+
+class MiniMapViewTest {
 
 	@Test
 	public void testDrawBackground() {
@@ -24,8 +29,14 @@ class WhackAMoleViewTest {
 	}
 	
 	@Test
-	public void testDisplayObjects() {
+	public void testShowBirdPosition() {
+		
+	}
+	
+	@Test
+	public void testShowBirdPath() {
 		
 	}
 
 }
+

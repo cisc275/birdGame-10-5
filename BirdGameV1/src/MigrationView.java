@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("serial")
 public class MigrationView extends View {
 	
 	public void displayObstacles() 

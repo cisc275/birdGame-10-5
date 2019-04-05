@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+@SuppressWarnings("serial")
 public class SideSwiperView extends View{
 	
 	public void displayBlocks() {

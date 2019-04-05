@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+@SuppressWarnings("serial")
 public class QuestionView extends View {
 	
 	public void displayQuestion()	{

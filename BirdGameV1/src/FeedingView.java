@@ -2,6 +2,7 @@ import java.awt.image.BufferedImage;
 
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("serial")
 public class FeedingView extends View {
 	
 	private BufferedImage[][] fishingAnimationArray;
