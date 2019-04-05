@@ -43,14 +43,4 @@ class StartViewTest {
 		
 	}
 	
-	@Test
-	public void testGetTutorialClicked() {
-		
-	}
-	
-	@Test
-	public void testGetStartClicked() {
-		
-	}
-	
 }

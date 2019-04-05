@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class QuestionView {
+public class QuestionView extends View {
 	
 	public void displayQuestion()	{
 		
