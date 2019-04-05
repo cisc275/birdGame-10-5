@@ -36,7 +36,22 @@ public class View extends JPanel {
 	public void setBackground(Color background) {
 		this.background = background;
 	}
-	
+
+	public BufferedImage[][] getBirdAnimationArray() {
+		return birdAnimationArray;
+	}
+
+	public BufferedImage[][] getObstacleAnimationArray() {
+		return obstacleAnimationArray;
+	}
+
+	public void setBirdAnimationArray(BufferedImage[][] birdAnimationArray) {
+		this.birdAnimationArray = birdAnimationArray;
+	}
+
+	public void setObstacleAnimationArray(BufferedImage[][] obstacleAnimationArray) {
+		this.obstacleAnimationArray = obstacleAnimationArray;
+	}
 }
 
 //-----------------------------------------------------------------------------------------------------
