@@ -1,3 +1,6 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
 import org.junit.Test;
 
 public class FeedingModel extends Model {
@@ -28,21 +31,25 @@ public class FeedingModel extends Model {
 class FeedingModelTest {
 	@Test
 	public void testDetectCollisions() {
-		
+		FeedingModel test = new FeedingModel();
+		assertEquals(false, test.detectCollisions());
+		assertFalse(test.detectCollisions());
 	}
 	
 	@Test
 	public void testUpdateLocationAndDirection() {
-		
+		//no need for test at this time
 	}
 	
 	@Test
 	public void testDive() {
-		
+		//no need for test at this time
 	}
 	
 	@Test
 	public void testIsHoldingFish() {
-		
+		FeedingModel test = new FeedingModel();
+		assertEquals(false, test.isHoldingFish());
+		assertFalse(test.isHoldingFish());
 	}
 }

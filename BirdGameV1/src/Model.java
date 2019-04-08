@@ -1,3 +1,5 @@
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 
 public class Model {
@@ -104,16 +106,19 @@ public class Model {
 
 //-----------------------------------------------------------------------------------------------------
 //JUnit Tests
+
 class ModelTest {
 
 	@Test
 	public void testUpdateLocationAndDirection() {
-		
+		//no need for test at this time
 	}
 	
 	@Test
 	public void testDetectCollisions() {
-
+		Model test = new Model();
+		assertEquals(false, test.detectCollisions());
+		assertFalse(test.detectCollisions());
 	}
 
 }

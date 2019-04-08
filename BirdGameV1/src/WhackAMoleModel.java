@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class WhackAMoleModel extends Model {
 	private int resourceCount;
@@ -31,12 +33,14 @@ class WhackAMoleModelTest {
 
 	@Test
 	public void testDetectCollisions() {
-		
+		WhackAMoleModel test = new WhackAMoleModel();
+		assertEquals(false, test.detectCollisions());
+		assertFalse(test.detectCollisions());
 	}
 	
 	@Test
 	public void testRandomizeObjects() {
-		
+		//no need for test at this time
 	}
 	
 }
