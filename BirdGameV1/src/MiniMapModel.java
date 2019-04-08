@@ -1,9 +1,11 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MiniMapModel extends Model {
 	
+	//updateLocationAndDirection() will contain the logic that allows the bird to move in the x or y direction based on user input
 	@Override
 	public void updateLocationAndDirection()	{
 		
@@ -20,12 +22,17 @@ class MiniMapModelTest {
 
 	@Test
 	public void testUpdateLocationAndDirection() {
-		//no need for test at this time
+		MiniMapModel test = new MiniMapModel();
+		test.setXloc(0);
+		test.setxVector(1);
+		test.updateLocationAndDirection();
+		assertNotEquals(0, test.getXloc());
+		assertNotEquals(1, test.getxVector());
 	}
 	
 	@Test
 	public void testPlotPoint() {
-		//no need for test at this time
+		//can't test at this time
 	}
 
 }

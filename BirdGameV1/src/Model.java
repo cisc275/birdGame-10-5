@@ -14,11 +14,12 @@ public class Model {
 	private int direction;
 	private int health;
 	
-
+	//updateLocationAndDirection() will contain the logic that allows the bird to move in the x or y direction based on user input
 	public void updateLocationAndDirection() {
 		
 	}
 	
+	//detectCollisions() will contain the logic that determines if the bird model has collided with objects such as the ground and other obstacles
 	public boolean detectCollisions() {
 		return false;
 	}
@@ -26,7 +27,7 @@ public class Model {
 	public int getFrameHeight() {
 		return frameHeight;
 	}
-
+	
 	public void setFrameHeight(int frameHeight) {
 		this.frameHeight = frameHeight;
 	}
@@ -111,7 +112,12 @@ class ModelTest {
 
 	@Test
 	public void testUpdateLocationAndDirection() {
-		//no need for test at this time
+		Model test = new Model();
+		test.setXloc(0);
+		test.setxVector(1);
+		test.updateLocationAndDirection();
+		assertNotEquals(0, test.getXloc());
+		assertNotEquals(1, test.getxVector());
 	}
 	
 	@Test
