@@ -11,6 +11,7 @@ public class MiniMapModel extends Model {
 		
 	}
 	
+	//Will update the minimap image based on the travel path of both birds, and will generate a point where the bird currently is on the map
 	public void plotPoint()	{
 		
 	}

@@ -27,6 +27,8 @@ public class Controller implements ActionListener, KeyListener {
 		
 	}
 
+	
+	// necessary methods to be implemented from super class
 	@Override
 	public void keyTyped(KeyEvent e) {
 		// TODO Auto-generated method stub

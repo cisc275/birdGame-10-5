@@ -1,3 +1,5 @@
+import static org.junit.Assert.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 @SuppressWarnings("serial")
@@ -11,7 +13,7 @@ public class StartView extends View {
 		// TODO Auto-generated constructor stub
 	}
 	
-	//Creates the bird image
+	//Displays the bird image
 	public void createBirdObject() {
 		
 	}
@@ -40,12 +42,12 @@ class StartViewTest {
 	
 	@Test
 	public void createBirdObject() {
-		
+		// GUI element - cannot test at this time
 	}
 	
 	@Test
 	public void drawBackground() {
-		
+		// GUI element - cannot test at this time
 	}
 	
 }
