@@ -60,12 +60,22 @@ class SideSwiperModelTest {
 	
 	@Test
 	public void testUpdateBirdLocation() {
-		//no need for test at this time
+		SideSwiperModel test = new SideSwiperModel();
+		test.setXloc(0);
+		test.setYloc(1);
+		test.updateLocationAndDirection();
+		assertNotEquals(0, test.getXloc());
+		assertNotEquals(1, test.getYloc());
 	}
 	
 	@Test
 	public void testUpdateObstacleLocation() {
-		//no need for test at this time
+		SideSwiperModel test = new SideSwiperModel();
+		test.setXloc(0);
+		test.setYloc(1);
+		test.updateLocationAndDirection();
+		assertNotEquals(0, test.getXloc());
+		assertNotEquals(1, test.getYloc());
 	}
 	
 	@Test
@@ -87,7 +97,14 @@ class SideSwiperModelTest {
 	
 	@Test
 	public void testMoveObstacles() {
-		//no need for test at this time
+		Model test = new SideSwiperModel();
+		test.setXloc(0);
+		test.setYloc(0);
+		int xloc1 = test.getXloc();
+		int yloc1 = test.getYloc();
+		test.updateLocationAndDirection();
+		assertNotEquals(xloc1, test.getXloc());
+		assertNotEquals(yloc1, test.getYloc());
 	}
 }
 
