@@ -113,8 +113,11 @@ class ModelTest {
 	@Test
 	public void testUpdateLocationAndDirection() {
 		Model test = new Model();
-		test.setDirection(1);
-		
+		test.setXloc(0);
+		test.setxVector(1);
+		test.updateLocationAndDirection();
+		assertNotEquals(0, test.getXloc());
+		assertNotEquals(1, test.getxVector());
 	}
 	
 	@Test

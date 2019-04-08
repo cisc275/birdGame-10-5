@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class SideSwiperModel extends Model {
 	
@@ -49,7 +50,12 @@ class SideSwiperModelTest {
 	
 	@Test
 	public void testUpdateLocationAndDirection() {
-		//no need for test at this time
+		SideSwiperModel test = new SideSwiperModel();
+		test.setXloc(0);
+		test.setxVector(1);
+		test.updateLocationAndDirection();
+		assertNotEquals(0, test.getXloc());
+		assertNotEquals(1, test.getxVector());
 	}
 	
 	@Test

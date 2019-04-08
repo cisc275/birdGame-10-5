@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.junit.Test;
 
@@ -40,12 +41,17 @@ class FeedingModelTest {
 	
 	@Test
 	public void testUpdateLocationAndDirection() {
-		//no need for test at this time
+		FeedingModel test = new FeedingModel();
+		test.setXloc(0);
+		test.setxVector(1);
+		test.updateLocationAndDirection();
+		assertNotEquals(0, test.getXloc());
+		assertNotEquals(1, test.getxVector());
 	}
 	
 	@Test
 	public void testDive() {
-		//no need for test at this time
+		//can't test at this time
 	}
 	
 	@Test
